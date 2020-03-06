@@ -22,4 +22,4 @@ If you want to sponsor the next edition of Two Scoops of Django, here are some o
 
 - Purchase our Django tutorial, the [Django Crash Course](https://www.roygreenfeld.com/collections/two-scoops-press/products/django-crash-course)
 - Donate monthly on the [Roy Greenfeld Patreon](https://www.patreon.com/roygreenfeld)
-- Email us at [hi@roygreenfeld.com](mailto:hi@roygreenfeld.com?subject=Sponsoring Two Scoops of Django) for other options
+- Email us at [hi@roygreenfeld.com](mailto:hi@roygreenfeld.com?subject=Sponsoring%20Two%20Scoops%20of%20Django) for other options
