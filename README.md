@@ -1,4 +1,4 @@
-# twoscoops-two-scoops-of-django-3.x
+# two-scoops-of-django-3.x
 The issue tracker, changelog, and code repository for Two Scoops of Django 3.x
 
 Tracking thoughts and feature requests for Two Scoops of Django 1.11 in the issue tracker.
