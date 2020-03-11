@@ -1,7 +1,7 @@
 # two-scoops-of-django-3.x
 The issue tracker, changelog, and code repository for Two Scoops of Django 3.x
 
-Tracking thoughts and feature requests for Two Scoops of Django 1.11 in the issue tracker.
+Tracking thoughts and feature requests for Two Scoops of Django 3.x in the issue tracker.
 
 Available soon in both PDF and print formats at https://www.roygreenfeld.com. 
 
@@ -18,8 +18,8 @@ Available soon in both PDF and print formats at https://www.roygreenfeld.com.
 
 ## Sponsor Two Scoops of Django 3.x!
 
-If you want to sponsor the next edition of Two Scoops of Django, here are some options:
+If you want to sponsor the next edition of Two Scoops of Django, here are some options (more on the way):
 
-- Purchase our Django tutorial, the [Django Crash Course](https://www.roygreenfeld.com/collections/two-scoops-press/products/django-crash-course)
 - Donate monthly on the [Roy Greenfeld Patreon](https://www.patreon.com/roygreenfeld)
+- Purchase our Django tutorial, the [Django Crash Course](https://www.roygreenfeld.com/collections/two-scoops-press/products/django-crash-course)
 - Email us at [hi@roygreenfeld.com](mailto:hi@roygreenfeld.com?subject=Sponsoring%20Two%20Scoops%20of%20Django) for other options
