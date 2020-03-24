@@ -3,14 +3,14 @@ The issue tracker, changelog, and code repository for Two Scoops of Django 3.x
 
 Tracking thoughts and feature requests for Two Scoops of Django 3.x in the issue tracker.
 
-Available soon in both PDF and print formats at https://www.roygreenfeld.com. 
+Available soon in both PDF and print formats at https://www.feldroy.com. 
 
 ## Before You Submit an Issue
 
 * Be nice. :-)
 * Be honest.
 * Check the issues from the previous version (1.11) [open](https://github.com/twoscoops/two-scoops-of-django-1.11/issues?state=open) and [closed](https://github.com/twoscoops/two-scoops-of-django-1.11/issues?state=closed) to see if your issue already exists.
-* Check the [changelog](https://github.com/twoscoops/two-scoops-of-django-3.x/blob/master/changelog.md) to see if your issue has already been resolved.
+* Check the [changelog](https://github.com/feldroy/two-scoops-of-django-3.x/blob/master/changelog.md) to see if your issue has already been resolved.
 * Please, please, please identify each issue by chapter, section, and subsection numbers. Since the content shifts around using page numbers to identify problems is innaccurate.
 * For tracking and credit purposes, **each request for correction needs to be in it's own issue. If an issue contains 2 or more issues, we may close it with a request for breaking up into more atomic issues.**
 
@@ -26,4 +26,4 @@ So if you want to sponsor Two Scoops of Django, we will be listing sponsors in o
 
 - Donate monthly on the [Roy Greenfeld Patreon](https://www.patreon.com/roygreenfeld)
 - Bitcoin and other cryptocurrencies on our [cryptocurrency page](https://commerce.coinbase.com/checkout/f550c9fe-fc26-4a90-bd72-c254a14451e5)
-- Email us at [hi@roygreenfeld.com](mailto:hi@roygreenfeld.com?subject=Sponsoring%20Two%20Scoops%20of%20Django) for other options
+- Email us at [hi@roygreenfeld.com](mailto:hi@feldroy.com?subject=Sponsoring%20Two%20Scoops%20of%20Django) for other options
