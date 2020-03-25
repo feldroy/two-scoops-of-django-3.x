@@ -24,6 +24,6 @@ If you want to help us, this time around we're taking sponsorship. We considered
 
 So if you want to sponsor Two Scoops of Django, we will be listing sponsors in our acknowledgements. Significant sponsors (US$200 or more will get special mention on our product pages, inside the book itself, and this repo. Options to sponsor:
 
-- Donate monthly on the [Roy Greenfeld Patreon](https://www.patreon.com/roygreenfeld)
+- Donate monthly on the [Feldroy Patreon](https://www.patreon.com/feldroy)
 - Bitcoin and other cryptocurrencies on our [cryptocurrency page](https://commerce.coinbase.com/checkout/f550c9fe-fc26-4a90-bd72-c254a14451e5)
-- Email us at [hi@roygreenfeld.com](mailto:hi@feldroy.com?subject=Sponsoring%20Two%20Scoops%20of%20Django) for other options
+- Email us at [hi@feldroy.com](mailto:hi@feldroy.com?subject=Sponsoring%20Two%20Scoops%20of%20Django) for other options
