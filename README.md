@@ -16,14 +16,8 @@ Available soon in both PDF and print formats at https://www.feldroy.com.
 
 **Editorial Note:** In order to make issues more readily searchable, we may alter titles and descriptions of issues as needed.
 
-## Sponsor Two Scoops of Django 3.x!
+## Will this be published? 
 
 Two Scoops of Django is a huge effort of love. We're not just updating version numbers of packages, we're also validating every sentence and every code example in the book. We chop out the deprecated material and add in new material. We also work with security experts to validate our security material. All of this takes at least two months of full time work for both Daniel and Audrey. During that time we aren't consulting or working on products, instead we're digging deep into our hearts to deliver a body of work readers around the world can lean on.
 
-If you want to help us, this time around we're taking sponsorship. We considered doing a Kickstarter or some alternative, but running a successful kickstarter takes at least a month of preperation. And honestly, we would rather spend that time and energy improving Two Scoops of Django. And that's why we're taking sponsorship.
-
-So if you want to sponsor Two Scoops of Django, we will be listing sponsors in our acknowledgements. Significant sponsors (US$200 or more will get special mention on our product pages, inside the book itself, and this repo. Options to sponsor:
-
-- Donate monthly on the [Feldroy Patreon](https://www.patreon.com/feldroy)
-- Bitcoin and other cryptocurrencies on our [cryptocurrency page](https://commerce.coinbase.com/checkout/f550c9fe-fc26-4a90-bd72-c254a14451e5)
-- Email us at [hi@feldroy.com](mailto:hi@feldroy.com?subject=Sponsoring%20Two%20Scoops%20of%20Django) for other options
+The problem is we have concerns about the financial risks involved. Two months away from paying work is a hefty price to pay in the middle of a pandemic. We're exploring options but don't hold your breath.
