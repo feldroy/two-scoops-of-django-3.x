@@ -16,10 +16,7 @@ Available soon in both PDF and print formats at https://www.feldroy.com.
 
 **Editorial Note:** In order to make issues more readily searchable, we may alter titles and descriptions of issues as needed.
 
-## Will this be published? 
+## When will this be published? 
 
-Probably not.
+Early May.
 
-Two Scoops of Django is a huge effort of love. We're not just updating version numbers of packages, we're also validating every sentence and every code example in the book. We chop out the deprecated material and add in new material. We also work with security experts to validate our security material. All of this takes at least two months of full time work for both Daniel and Audrey. During that time we aren't consulting or working on products, instead we're digging deep into our hearts to deliver a body of work readers around the world can lean on.
-
-The problem is we have concerns about the financial risks involved. Two months away from paying work is a hefty price to pay in the middle of a pandemic. We're exploring options but don't hold your breath.
