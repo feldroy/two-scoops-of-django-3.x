@@ -1,8 +1,7 @@
-
 Using This Code Example
 =========================
-The code examples provided are provided by Daniel Greenfeld and Audrey Roy of
-Two Scoops Press to help you reference Two Scoops of Django: Best Practices
+The code examples provided are provided by Daniel and Audrey Feldroy of
+Feldroy to help you reference Two Scoops of Django: Best Practices
 for Django 3.x. Code samples follow PEP-0008, with exceptions made for the
 purposes of improving book formatting. Example code is provided "as is", and
 is not intended to be, and should not be considered or labeled as "tutorial
@@ -24,7 +23,7 @@ commercial distributions. Examples:
     product's documentation does require permission.
 Attributions usually include the title, author, publisher and an ISBN. For
 example, "Two Scoops of Django: Best Practices for Django 3.x, by Daniel and
-Audrey FeldRoy. Copyright 2020 Feldroy.
+Audrey Feldroy. Copyright 2020 Feldroy.
 ."
 If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
