@@ -24,8 +24,8 @@ commercial distributions. Examples:
     product's documentation does require permission.
 Attributions usually include the title, author, publisher and an ISBN. For
 example, "Two Scoops of Django: Best Practices for Django 3.x, by Daniel and
-Audrey Feldroy. Copyright 2020 Feldroy.
-."
+Audrey Feldroy. Copyright 2020 Feldroy."
+
 If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
