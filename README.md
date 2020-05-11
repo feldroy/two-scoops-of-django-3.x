@@ -18,4 +18,4 @@ Available soon in both PDF and print formats at https://www.feldroy.com/products
 
 ## When will this be published?
 
-It's published and can get it at https://www.feldroy.com/products/two-scoops-of-django-3-x
+It's published and you can get it at https://www.feldroy.com/products/two-scoops-of-django-3-x
