@@ -2,6 +2,42 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
+# Updates until 2020-05-13
+
+## General
+
+- More grammar!
+
+## Book crafting process
+
+- Added placeins LaTex package to the `requirements-latex.yml` file.
+- Updated the book build instructions.
+
+
+## Chapter - Project Setup
+
+- Removed wemake-python-styleguide as a recommendation for Django projects
+
+## Chapter - More forms
+
+- Remove link to csrf docs
+
+## Chapter - DRF
+
+- Fixed link to Classy DRF site
+
+## Appendix - Additional Resources
+
+- Added Simple Better Than Complex, apologies to Vitor we didn't include it at launch
+- Added classy Django forms
+- Removed links to our own pages of additional resources
+
+## Appendix - Websockets and Channels
+
+- Fix broken link to Channels' testing documentation
+
+----
+
 # Updates until 2020-05-10
 
 ## General changes
@@ -161,8 +197,6 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 - Change link to Lanyrd search for conference talks to YouTube
 - Removed link to David Cramer's now defunct blog
 - Reference Andrew Brook's excellent book, [The Temple of Django Database Performance](https://spellbookpress.com/books/temple-of-django-database-performance/) 
-
-
 
 ## Chapter - Signals
 
