@@ -16,10 +16,6 @@ Available soon in both PDF and print formats at https://www.feldroy.com/products
 
 **Editorial Note:** In order to make issues more readily searchable, we may alter titles and descriptions of issues as needed.
 
-## When will this be published? 
+## When will this be published?
 
-Early May. You will be able to get it at https://www.feldroy.com/products/two-scoops-of-django-3-x
-
-## How Can I help?
-
-For now what you can do is purchase the ebook of [Two Scoops of Django 1.11](https://www.feldroy.com/collections/two-scoops-press/products/two-scoops-of-django-1-11). If you do that in 2020, that qualifies you for a free copy of the ebook version of Two Scoops of Django 3.x when it is released. 
+It's published and you can get it at https://www.feldroy.com/products/two-scoops-of-django-3-x
