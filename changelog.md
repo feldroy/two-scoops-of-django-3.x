@@ -2,43 +2,51 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
-# Updates until 2020-05-13
+# Updates until 2020-05-19
 
 ## General
 
 - More grammar!
+- Consistent case for `URLConfs`
 
-## Book crafting process
+## Chapter - Environment Setup
 
-- Added placeins LaTex package to the `requirements-latex.yml` file.
-- Updated the book build instructions.
-
+- Replaced "typing" with "type casting", the latter is more explicit
 
 ## Chapter - Project Setup
 
-- Removed wemake-python-styleguide as a recommendation for Django projects
+- Added link to Cookiecutter docs
 
-## Chapter - More forms
+## Chapter - Databases
 
-- Remove link to csrf docs
+- Took out the long removed `use_for_related_fields` attribute from manager code example
 
-## Chapter - DRF
+## Chapter - Templates
 
-- Fixed link to Classy DRF site
+- Fix LaTeX escape failure
 
-## Appendix - Additional Resources
+## Chapter - Security
 
-- Added Simple Better Than Complex, apologies to Vitor we didn't include it at launch
-- Added classy Django forms
-- Removed links to our own pages of additional resources
+- Removed Pony Checkup
 
-## Appendix - Websockets and Channels
+## Chapter - PaaS
 
-- Fix broken link to Channels' testing documentation
+- Added Zappa as an option
+- Took away statement that Elastic Beanstalk was on mod_wsgi and hence no channels
+
+
+## Chapter - CI
+
+ - Added MacOS to Azure Pipelines in feature table
+
+## Chapter - Debugging
+
+- Updated IDE preferences
+
 
 ----
 
-# Updates until 2020-05-10
+# Updates until 2020-05-13
 
 ## General changes
 
@@ -57,7 +65,13 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 - Use "README file" instead of README.md or README.rst
 - Added footer to instruct users where to submit issues
 - Added warnings at the front of chapters which won't be published  
+
+## Book crafting process
+
 - LaTeX datestamping now automated. Why didn't we do this years ago?
+- Added placeins LaTex package to the `requirements-latex.yml` file.
+- Updated the book build instructions.
+
 
 ## Note from the authors
 
@@ -95,6 +109,7 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
 - Added "Don't Upload Environment Directories To Open Source" warning box
 - Now calls runserver with the correct settings argument
+- Removed wemake-python-styleguide as a recommendation for Django projects
 
 ## Chapter - Fundamentals of App Design
 
@@ -114,6 +129,8 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
 - Added links to more useful references, removed some outdated ones
 - Switch from JWT library to dj-rest-auth for authentication
+- Remove link to csrf docs
+
 
 
 ## Chapter - Function- and Class-Based Views
@@ -152,11 +169,12 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 - Removed statement about maturity of Jinja2 in Django, it's mature now
 - Switched to 2 character tabs
 
-## Chapter - REST APIs
+## Chapter - Django REST Framework
 
 - Make more explicit that routers go into `urls.py` modules
 - Mention Randall Degges advice about Usage-Based Plans
 - Mention DRF support for different versioning schemas and link to docs
+- Fixed link to Classy DRF site
 
 ## Chapter - Building GraphQL APIs with Graphene
 
@@ -280,6 +298,12 @@ _Many thanks to our incredibly diligent security reviewers!_
 
 - Replace `string_concat` with `format_lazy`
 
+## Appendix - Additional resources
+
+- Added Simple Better Than Complex, apologies to Vitor we didn't include it at launch
+- Added classy Django forms
+- Removed links to our own pages of additional resources
+
 
 ## Appendix - Handling Security Failures
 
@@ -294,3 +318,4 @@ _Many thanks to our incredibly diligent security reviewers!_
 # Appendix - Websockets with Channels
 
 - Removed "Channels Works Better With Python 3.6+". Django 3 makes Python 3.6 or higher mandatory
+- Fix broken link to Channels' testing documentation
