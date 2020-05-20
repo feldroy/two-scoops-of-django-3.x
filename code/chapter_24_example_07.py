@@ -32,7 +32,7 @@ given here, please contact us at hi@feldroy.com.
 
     @mock.patch.object(requests, 'get')
     def test_request_failure(self, get):
-        """Test if the target site is innaccessible."""
+        """Test if the target site is inaccessible."""
         get.side_effect = requests.exception.ConnectionError()
 
         with self.assertRaises(CantListFlavors):

@@ -36,22 +36,22 @@ from . import views
 
 urlpatterns = [
     path(
-        route=r'',
+        route='',
         view=views.TasteListView.as_view(),
         name='list'
     ),
     path(
-        route=r'<int:pk>/',
+        route='<int:pk>/',
         view=views.TasteDetailView.as_view(),
         name='detail'
     ),
     path(
-        route=r'<int:pk>/results/',
+        route='<int:pk>/results/',
         view=views.TasteResultsView.as_view(),
         name='results'
     ),
     path(
-        route=r'<int:pk>/update/',
+        route='<int:pk>/update/',
         view=views.TasteUpdateView.as_view(),
         name='update'
     )
