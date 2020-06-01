@@ -33,7 +33,7 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
 ## Chapter - Security
 
-- Ponycheckup is no more. Many thanks to Sasha Romijn for providing such an invaluable
+- Ponycheckup is no more. Many thanks to Sasha Romijn for providing such an invaluable resource
 - Added PyCharm Django Security
 
 ----
