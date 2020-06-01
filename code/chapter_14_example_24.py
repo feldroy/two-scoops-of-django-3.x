@@ -35,7 +35,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'APP_DIRS': True,
-        'OPTIONS':
-            'string_if_invalid': 'INVALID EXPRESSION: %s'
+        'OPTIONS': {
+              'string_if_invalid': 'INVALID EXPRESSION: %s'
+            }
     },
 ]

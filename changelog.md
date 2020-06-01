@@ -2,6 +2,42 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
+# Updates until 2020-05-29
+
+## General
+
+- Model mommy is now model bakery
+
+## Chapter - Models
+
+- Table layout corrections in chapter 6
+- `BooleanField(null=True)` recommended instead of `NullBooleanField`
+
+## Chapter - FBVs
+
+- Corrected return type for `check_sprinkles` function
+
+
+## Chapter - Django REST Framework
+
+- Link to sources on how to rate limit
+- Removed material on coreapi because that project has been replaced by openapi
+
+## Chapter - Documentation
+
+- Added myst for rendering markdown in Sphinx
+
+## Chapter - User Model
+
+- Mention that django-authtools doesn't yet work for Django 3
+
+## Chapter - Security
+
+- Ponycheckup is no more. Many thanks to Sasha Romijn for providing such an invaluable
+- Added PyCharm Django Security
+
+----
+
 # Updates until 2020-05-19
 
 ## General

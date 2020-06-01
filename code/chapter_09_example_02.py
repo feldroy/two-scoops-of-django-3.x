@@ -33,7 +33,7 @@ given here, please contact us at hi@feldroy.com.
 from django.core.exceptions import PermissionDenied
 from django.http import HttpRequest, HttpResponse
 
-def check_sprinkles(request: HttpRequest) -> HttpResponse:
+def check_sprinkles(request: HttpRequest) -> HttpRequest:
     if request.user.can_sprinkle or request.user.is_staff:
         # By adding this value here it means our display templates
         #   can be more generic. We don't need to have

@@ -31,7 +31,7 @@ given here, please contact us at hi@feldroy.com.
 """
 
 from django.core.exceptions import PermissionDenied
-from django.http import HttpRequest, HttpResponse
+from django.http import HttpRequest
 
 def check_sprinkle_rights(request: HttpRequest) -> HttpRequest:
     if request.user.can_sprinkle or request.user.is_staff:

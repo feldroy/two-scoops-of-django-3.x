@@ -36,5 +36,5 @@ Do you want to re-use the existing version? [yes]: yes
 project_name [My Awesome Project]: icecreamratings
 project_slug [icecreamratings]: 
 description [Behold My Awesome Project!]: Support your Ice Cream Flavour!
-author_name [Daniel Roy Greenfeld]:
+author_name [Daniel Feldroy]:
 <snip for brevity>   
