@@ -2,6 +2,15 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
+# Updates until 2020-06-05
+
+- Included forward by [Will Vincent](https://learndjango.com)
+- Began expanding the async views chapter
+- Made pipenv active again now that they had a formal release
+- Added first half of Appendix A: Chapters mentioned in this book
+
+----
+
 # Updates until 2020-05-29
 
 ## General
@@ -33,7 +42,7 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
 ## Chapter - Security
 
-- Ponycheckup is no more. Many thanks to Sasha Romijn for providing such an invaluable resource
+- Ponycheckup is no more. Many thanks to Sasha Romijn for providing such an invaluable
 - Added PyCharm Django Security
 
 ----
