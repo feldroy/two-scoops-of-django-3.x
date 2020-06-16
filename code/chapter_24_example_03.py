@@ -44,9 +44,9 @@ class DjangoRestFrameworkTests(TestCase):
         Flavor.objects.get_or_create(title='title1', slug='slug1')
         Flavor.objects.get_or_create(title='title2', slug='slug2')
 
-        self.create_read_url = reverse('flavor_rest_api')
+        self.create_read_url = reverse('flavors:flavor_rest_api')
         self.read_update_delete_url = \
-            reverse('flavor_rest_api', kwargs={'slug': 'slug1'})
+            reverse('flavors:flavor_rest_api', kwargs={'slug': 'slug1'})
 
     def test_list(self):
         response = self.client.get(self.create_read_url)

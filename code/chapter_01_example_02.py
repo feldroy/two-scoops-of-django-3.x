@@ -33,11 +33,11 @@ given here, please contact us at hi@feldroy.com.
 # cones/views.py
 from django.views.generic import CreateView
 
-# DON'T DO THIS!
-# Hardcoding of the 'cones' package
-# with implicit relative imports
-from cones.models import WaffleCone
-from cones.forms import WaffleConeForm
+# Relative imports of the 'cones' package
+from .models import WaffleCone
+from .forms import WaffleConeForm
+
+# absolute import from the 'core' package
 from core.views import FoodMixin
 
 class WaffleConeCreateView(FoodMixin, CreateView):

@@ -44,7 +44,7 @@ class FlavorAPITests(TestCase):
         Flavor.objects.get_or_create(title='A Title', slug='a-slug')
 
     def test_list(self):
-        url = reverse('flavor_object_api')
+        url = reverse('flavors:flavor_object_api')
         response = self.client.get(url)
         self.assertEquals(response.status_code, 200)
         data = json.loads(response.content)

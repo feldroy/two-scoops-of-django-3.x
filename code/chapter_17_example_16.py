@@ -30,8 +30,19 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-patterns = [
-    path(route='add/',
-        view=views.add_topping,
-        name='add_topping'),
-    ]
+class FlavorApiView(LoginRequiredMixin,View):
+    def post(self, request, *args, **kwargs):
+        # logic goes here
+        return JsonResponse({})
+
+    def get(self, request, *args, **kwargs):
+        # logic goes here
+        return JsonResponse({})
+
+    def put(self, request, *args, **kwargs):
+        # logic goes here
+        return JsonResponse({})
+
+    def delete(self, request, *args, **kwargs):
+        # logic goes here
+        return JsonResponse({})

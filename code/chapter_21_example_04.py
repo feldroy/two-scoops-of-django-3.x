@@ -43,7 +43,7 @@ given here, please contact us at hi@feldroy.com.
       readonly_fields = ('show_url',)
 
       def show_url(self, instance):
-          url = reverse('ice_cream_bar_detail', kwargs={'pk': instance.pk})
+          url = reverse('icecreambars:ice_cream_bar_detail', kwargs={'pk': instance.pk})
           response = format_html("""<a href="{0}">{0}</a>""", url)
           return response
 

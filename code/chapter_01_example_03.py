@@ -30,14 +30,5 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-# cones/views.py
-from django.views.generic import CreateView
-
-# Relative imports of the 'cones' package
-from .models import WaffleCone
-from .forms import WaffleConeForm
-from core.views import FoodMixin
-
-class WaffleConeCreateView(FoodMixin, CreateView):
-    model = WaffleCone
-    form_class = WaffleConeForm
+from django import forms
+from django.db import models

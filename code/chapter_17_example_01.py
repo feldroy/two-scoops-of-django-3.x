@@ -32,6 +32,6 @@ given here, please contact us at hi@feldroy.com.
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAdminUse',
+        'rest_framework.permissions.IsAdminUser',
     ),
 }

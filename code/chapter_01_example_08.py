@@ -33,5 +33,5 @@ given here, please contact us at hi@feldroy.com.
 patterns = [
     path(route='add/',
         view=views.add_topping,
-        name='add-topping'),
+        name='add_topping'),
     ]

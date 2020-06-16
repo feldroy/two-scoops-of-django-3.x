@@ -41,4 +41,4 @@ class IceCreamStore(models.Model):
     description = models.TextField(blank=True)
 
     def get_absolute_url(self):
-        return reverse('store_detail', kwargs={'pk': self.pk})
+        return reverse('stores:store_detail', kwargs={'pk': self.pk})

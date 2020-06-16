@@ -30,5 +30,6 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-from django import forms
-from django.db import models
+# ANTI-PATTERN: Don't do this!
+from django.forms import *
+from django.db.models import *
