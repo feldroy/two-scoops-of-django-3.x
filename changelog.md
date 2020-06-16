@@ -2,6 +2,52 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
+# Updates until 2020-06-16
+
+## General Changes
+
+- Revised and legible bad code examples!
+- More grammar fixes
+- All use of `reverse()` function now include URL namespaces
+
+## Coding Standards
+
+- Change focus of `Use Explicit Relative Imports` to `Understand Explicit Relative Imports` and removed `Implicit Relative Imports`
+
+## Chapter - Settings and Requirements
+
+- Removed tipbox for `Using django-admin Instead of manage.py`. This advice has been removed from the Django docs
+
+## Chapter - Database Model Best Practices
+
+- Removed link to blog post that used to describe how to use `DateTimeField` with logical deletes 
+
+## Chapter - Building APIs with Django Rest Framework
+
+- Added references to OpenAPI and tools
+- Mentioned using vanilla Django for creating APIs
+- Converted package tip for django-tastypie and django-jsonview into a new section for DRF alternatives
+- Added trailing 'r' on `rest_framework.permissions.IsAdminUser`
+
+## Chapter - JavaScript
+
+- Changed section "Popular JavaScript Frameworks" to "Popular JavaScript Approaches"
+- Added description list for serverside rendering of templates
+- Included alpine.js and turbolinks
+- Added section on JSON encoding for data rendered in the template but consumed by JavaScript
+
+
+## Chapter - Security
+ 
+- Corrected typo so PHI is now the acronym for `Protected Health Information`
+
+
+## Acknowledgements
+
+- Added Bio for Haris Ibrahim
+
+----
+
 # Updates until 2020-06-05
 
 - Included forward by [Will Vincent](https://learndjango.com)
