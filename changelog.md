@@ -2,6 +2,35 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
+# Updates until 2020-07-07
+
+This update adds 15 new pages to Two Scoops of Django, bringing us up to 461! 
+
+## General Changes
+
+- Yet more grammar fixes
+
+## Javascript
+
+- Added quote by DHH about the state of JavaScript in 2020
+
+## Admin chapter
+
+- Removed mention of long deprecated `allow_tags` property descriptor
+- Add warning box to use `format_html` function for enhancing security
+
+## User model chapter
+
+- Added multiple user models
+- Demonstration of proxy models
+
+## Package Used in this Book Appendix
+
+- Out of "being updated mode"
+- Reviewed all packages
+- Added new packages
+- Removal of deprecated packages
+
 # Updates until 2020-06-16
 
 ## General Changes

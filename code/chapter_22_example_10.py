@@ -30,8 +30,20 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-patterns = [
-    path(route='add/',
-        view=views.add_topping,
-        name='toppings:add_topping'),
-    ]
+>>> from users.models import User, Inventor
+>>> User.objects.count() # Over 300 million users!
+323482357
+>>> Inventor.objects.count() # But only 3 inventors
+3
+>>> # Calling someone as both a User and an Inventor
+>>> user = User.objects.get(username='umafeldroy')
+>>> user
+<User: uma>
+>>> inventor = Inventor.objects.get(username='umafeldroy')
+>>> inventor
+<Inventor: uma>
+>>> # Calling a method that's only for inventors
+>>> user.invent()
+AttributeError
+>>> inventor.invent()
+'Delicious'

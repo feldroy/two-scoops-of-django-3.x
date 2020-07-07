@@ -30,8 +30,13 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-patterns = [
-    path(route='add/',
-        view=views.add_topping,
-        name='toppings:add_topping'),
-    ]
+class User(AbstractUser):
+    class Types(models.TextChoices):
+        EATER = "EATER", "Eater"
+        SCOOPER = "SCOOPER", "Scooper"
+        INVENTOR = "INVENTOR", "Inventor"
+
+    # What type of user are we?
+    type = models.CharField(
+        _("Type"), max_length=50, choices=Types.choices, default=Types.EATER
+    )

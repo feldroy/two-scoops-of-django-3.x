@@ -54,5 +54,3 @@ class InventorProfile(models.Model):
 
     user = models.OneToOneField(settings.AUTH_USER_MODEL)
     flavors_invented = models.ManyToManyField(Flavor, null=True, blank=True)
-
-

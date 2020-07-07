@@ -30,8 +30,24 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-patterns = [
-    path(route='add/',
-        view=views.add_topping,
-        name='toppings:add_topping'),
-    ]
+class InventorManager(models.Manager):
+    def get_queryset(self, *args, **kwargs):
+        results = super().get_queryset(*args, **kwargs)
+        return results.filter(type=User.Types.INVENTOR)
+
+class Inventor(User):
+    # This sets the user type to INVENTOR during record creation
+    base_type = User.Types.INVENTOR
+
+    # Ensures queries on the Inventor model return only Inventors
+    objects = EaterManager()
+
+    # Setting proxy to "True" means a table WILL NOT be created
+    #    for this record
+    class Meta:
+        proxy = True
+
+    # Only inventors get to invent new flavors!
+    def invent(self):
+        # Magical custom logic goes Here
+        return "Delicious!"

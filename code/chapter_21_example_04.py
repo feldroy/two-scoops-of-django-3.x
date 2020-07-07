@@ -48,6 +48,4 @@ given here, please contact us at hi@feldroy.com.
           return response
 
       show_url.short_description = 'Ice Cream Bar URL'
-      # Displays HTML tags
-      # Never set allow_tags to True against user submitted data!!!
-      show_url.allow_tags = True
+

@@ -30,8 +30,29 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-patterns = [
-    path(route='add/',
-        view=views.add_topping,
-        name='toppings:add_topping'),
-    ]
+class Inventor(User):
+    # ...
+    class Meta:
+        proxy = True
+
+    @property
+    def extra(self):
+        return self.inventorprofile
+
+class Scooper(User):
+    # ...
+    class Meta:
+        proxy = True
+
+    @property
+    def extra(self):
+        return self.scooperprofile     
+
+class Eater(User):
+    # ...
+    class Meta:
+        proxy = True
+
+    @property
+    def extra(self):
+        return self.eaterprofile            
