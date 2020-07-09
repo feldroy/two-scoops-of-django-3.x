@@ -31,14 +31,14 @@ given here, please contact us at hi@feldroy.com.
 """
 
 # sprinkles/decorators.py
-from functools import wraps
+import functools
 
 from . import utils
 
 # based off the decorator template from the previous chapter
 def check_sprinkles(view_func):
     """Check if a user can add sprinkles"""
-    @wraps(view_func)
+    @functools.wraps(view_func)
     def new_view_func(request, *args, **kwargs):
         # Act on the request object with utils.can_sprinkle()
         request = utils.can_sprinkle(request)

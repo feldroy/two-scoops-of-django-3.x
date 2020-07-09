@@ -32,6 +32,8 @@ given here, please contact us at hi@feldroy.com.
 
 class Inventor(User):
     # ...
+    objects = InventorManager()
+
     class Meta:
         proxy = True
 
@@ -41,6 +43,8 @@ class Inventor(User):
 
 class Scooper(User):
     # ...
+    objects = ScooperManager()
+
     class Meta:
         proxy = True
 
@@ -50,6 +54,8 @@ class Scooper(User):
 
 class Eater(User):
     # ...
+    objects = EaterManager()
+
     class Meta:
         proxy = True
 

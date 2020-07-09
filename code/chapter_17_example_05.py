@@ -31,7 +31,7 @@ given here, please contact us at hi@feldroy.com.
 """
 
 # flavors/urls.py
-from django.conf.urls import url
+from django.urls import path
 
 from flavors.api import views
 

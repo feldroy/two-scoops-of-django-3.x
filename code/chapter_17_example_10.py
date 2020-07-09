@@ -34,7 +34,7 @@ given here, please contact us at hi@feldroy.com.
 """Called from the project root's urls.py URLConf thus:
         path('api/', include('core.api_urls', namespace='api')),
 """
-from django.conf.urls import url
+from django.urls import path
 
 from flavors.api import views as flavor_views
 from users.api import views as user_views

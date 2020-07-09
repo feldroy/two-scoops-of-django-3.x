@@ -2,6 +2,43 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
+# Updates until 2020-07-09
+
+## General Changes
+
+- Moved first reference to indexes from chapter 6 to chapter 7 
+- The inevitable grammar corrections
+
+## Settings and Requirements
+
+- Added `.zshrc` for configuring environment variables
+
+## Best Practices for FBVs
+
+- Made use of `functools.wraps` consistent
+
+## Best Practices for CBVs
+
+- Mixins should not inherit from `object`, that is a holdover from Python 2.7 
+
+## Finding and Reducing bottlenecks
+
+- Reviewed content in full and added to the book
+
+## Third-Party Packages
+
+- Add instruction for git tagging project releases
+
+## Async Task Queues
+
+- Started on reviewing content
+
+## Internationalization
+
+- All pages updated for Django 3.x and Python 3.8
+
+----
+
 # Updates until 2020-07-07
 
 This update adds 15 new pages to Two Scoops of Django, bringing us up to 461! 

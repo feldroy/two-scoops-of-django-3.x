@@ -40,7 +40,7 @@ class Inventor(User):
     base_type = User.Types.INVENTOR
 
     # Ensures queries on the Inventor model return only Inventors
-    objects = EaterManager()
+    objects = InventorManager()
 
     # Setting proxy to "True" means a table WILL NOT be created
     #    for this record
