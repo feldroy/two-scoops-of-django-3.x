@@ -3,7 +3,7 @@ The issue tracker, changelog, and code repository for Two Scoops of Django 3.x
 
 Tracking thoughts and feature requests for Two Scoops of Django 3.x in the issue tracker.
 
-Available soon in both PDF and print formats at https://www.feldroy.com/products/two-scoops-of-django-3-x. 
+Available currently in PDF formats at https://www.feldroy.com/products/two-scoops-of-django-3-x. 
 
 ## Before You Submit an Issue
 
@@ -19,3 +19,7 @@ Available soon in both PDF and print formats at https://www.feldroy.com/products
 ## When will this be published?
 
 It's published and you can get it at https://www.feldroy.com/products/two-scoops-of-django-3-x
+
+## Is there a video course?
+
+Yes, we have a live, online video course taking place on August 14th. Find out more at [Django Best Practices the Two Scoops Way](https://events.eventzilla.net/e/django-best-practices-the-two-scoops-way-2138797976).
