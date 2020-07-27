@@ -30,23 +30,20 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-class UserManager(BaseUserManager):
-    """In users/managers.py"""
-    def create_user(self, email=None, password=None, avatar_url=None):
-        user = self.model(
-            email=email,
-            is_active=True,
-            last_login=timezone.now(),
-            registered_at=timezone.now(),
-            avatar_url=avatar_url
-        )
-        resize_avatar(avatar_url)
-        Ticket.objects.create_ticket(user)
-        return user
+# Skipping the rest of imports for the sake of brevity
+from django.utils.translation import gettext as _
 
-class TicketManager(models.manager):
-    """In tasks/managers.py"""
-    def create_ticket(self, user: User):
-        ticket = self.model(user=user)
-        send_ticket_to_guest_checkin(ticket)
-        return ticket
+class FlavorActionMixin:
+
+    @property
+    def success_msg(self):
+        return NotImplemented
+
+class FlavorCreateView(LoginRequiredMixin, FlavorActionMixin,
+                        CreateView):
+    model = Flavor
+
+    # Slightly longer but more meaningful dialogue
+    success_msg = _('Flavor created!')
+
+# Skipping the rest of this module for the sake of brevity
