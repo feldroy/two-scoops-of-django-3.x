@@ -2,6 +2,38 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
+# Updates until 2020-07-27
+
+## General Changes
+
+- Grammar fixes
+
+## Settings and Requirements
+
+- Add missing `ql` to ORM engine
+
+## Models and Queries
+
+- JSONField is now for all database types
+
+## Templates
+
+- Removed GitHub's 404 page from the list of being self-contained HTML, CSS, and JS 
+
+## Third-party packages
+
+- Fix code highlighting
+
+## Security
+
+- Fix borked link
+
+## Appendix: Resources
+
+- Added testdriven.io
+
+---
+
 # Updates until 2020-07-09
 
 ## General Changes
