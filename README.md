@@ -22,4 +22,4 @@ It's published and you can get it at https://www.feldroy.com/products/two-scoops
 
 ## Is there a video course?
 
-Yes, we have a live, online video course taking place on August 14th. Find out more at [Django Best Practices the Two Scoops Way](https://events.eventzilla.net/e/django-best-practices-the-two-scoops-way-2138797976).
+Yes, we teach a more indepth version as a live, interactive couse. Find out more at [Django Best Practices the Two Scoops Way](https://www.feldroy.com/pages/courses#dbp-tsw).
