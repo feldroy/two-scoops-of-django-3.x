@@ -35,7 +35,7 @@ class TitleSearchMixin:
 
     def get_queryset(self):
         # Fetch the queryset from the parent's get_queryset
-        queryset = super(TitleSearchMixin, self).get_queryset()
+        queryset = super().get_queryset()
 
         # Get the q GET parameter
         q = self.request.GET.get('q')

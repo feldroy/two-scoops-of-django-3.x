@@ -59,6 +59,5 @@ class FlavorActionMixin:
             form_data=form_data,
             model_data=model_data
         )
-        return super(FlavorActionMixin,
-                    self).form_invalid(form)
+        return super().form_invalid(form)
 
