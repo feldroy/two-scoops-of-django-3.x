@@ -2,6 +2,31 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
+# Updates until 2020-12-02
+
+## General Changes
+
+- Added Authorized Vendors and Distributors informations
+- Various spelling and grammar corrections
+- Removed last python 2.7-style usages of `super()` 
+
+## Database Queries
+
+- Use `breakpoint()` instead of importing pdb
+
+## FBVs
+
+- Added Luke Plant's "Django Views the Right Way"
+
+## User models
+
+- Corrected wrong parent class
+
+
+
+
+---
+
 # Updates until 2020-07-27
 
 ## General Changes
