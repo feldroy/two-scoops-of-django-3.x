@@ -30,22 +30,13 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-# sprinkles/decorators.py
-import functools
-
-from . import utils
-
-# based off the decorator template from the previous example
-def check_sprinkles(view_func):
-    """Check if a user can add sprinkles"""
-    @functools.wraps(view_func)
-    def new_view_func(request, *args, **kwargs):
-        # Act on the request object with utils.can_sprinkle()
-        request = utils.can_sprinkle(request)
-
-        # Call the view function
-        response = view_func(request, *args, **kwargs)
-
-        # Return the HttpResponse object
-        return response
-    return new_view_func
+# Taken directly from core Django code.
+# Used here to illustrate an example only, so don't
+# copy this into your project.
+logger.warning('Forbidden (%s): %s',
+               REASON_NO_CSRF_COOKIE, request.path,
+    extra={
+        'status_code': 403,
+        'request': request,
+    }
+)

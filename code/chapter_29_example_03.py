@@ -30,22 +30,15 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-# sprinkles/decorators.py
-import functools
+from django.views.generic import TemplateView
 
-from . import utils
+from .helpers import pint_counter
 
-# based off the decorator template from the previous example
-def check_sprinkles(view_func):
-    """Check if a user can add sprinkles"""
-    @functools.wraps(view_func)
-    def new_view_func(request, *args, **kwargs):
-        # Act on the request object with utils.can_sprinkle()
-        request = utils.can_sprinkle(request)
+class PintView(TemplateView):
 
-        # Call the view function
-        response = view_func(request, *args, **kwargs)
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(**kwargs)
+        pints_remaining = pint_counter()
+        print(f'Only {pints_remaining} pints of ice cream left.')
+        return context
 
-        # Return the HttpResponse object
-        return response
-    return new_view_func

@@ -30,22 +30,9 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-# sprinkles/decorators.py
-import functools
+# You can place this snippet at the top
+# of models.py, views.py, or any other
+# file where you need to log.
+import logging
 
-from . import utils
-
-# based off the decorator template from the previous example
-def check_sprinkles(view_func):
-    """Check if a user can add sprinkles"""
-    @functools.wraps(view_func)
-    def new_view_func(request, *args, **kwargs):
-        # Act on the request object with utils.can_sprinkle()
-        request = utils.can_sprinkle(request)
-
-        # Call the view function
-        response = view_func(request, *args, **kwargs)
-
-        # Return the HttpResponse object
-        return response
-    return new_view_func
+logger = logging.getLogger(__name__)

@@ -2,6 +2,38 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
+# Updates until 2021-01-27
+
+## General
+
+- Converted all docs links to point to Django 3.2
+
+## Coding Style
+
+- Changed `isort` tip box to a package tip
+
+## Graphql
+
+- Removed trygql.com 
+
+## Security
+
+- Mention OTPs in 2FA
+
+## Logging
+
+- Chapter has been revised and is available for readers!
+- Added warning box about using f-strings with loggers
+- Removed Python 2 mention
+
+## Packages
+
+- Added aldjemy
+- Added django-stronghold
+- Added environment variable section with multiple packages
+
+---
+
 # Updates until 2020-12-02
 
 ## General Changes
