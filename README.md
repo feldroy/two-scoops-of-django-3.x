@@ -19,7 +19,3 @@ Available currently in PDF formats at https://www.feldroy.com/products/two-scoop
 ## When will this be published?
 
 It's published and you can get it at https://www.feldroy.com/products/two-scoops-of-django-3-x
-
-## Is there a video course?
-
-Yes, we teach a more indepth version as a live, interactive couse. Find out more at [Django Best Practices the Two Scoops Way](https://www.feldroy.com/pages/courses#dbp-tsw).
