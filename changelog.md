@@ -2,6 +2,33 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
+# Updates until 2021-06-14
+
+## General
+
+- Changed our names to Daniel and Audrey Roy Greenfeld
+- Grammar and spelling corrections
+
+## PAAS
+
+- Add Digital Ocean App Platform
+- Be honest about Heroku so users see it with open eyes
+
+## Debugging
+
+- Brought chapter in
+- Removed link to ancient blog post
+- Added mention of `breakpoint()`
+
+## Where and how to ask for help
+
+- Added section on the official forums 
+- Added Libera Chat IRC
+- Linkified a few items to make things easier on readers
+
+
+---
+
 # Updates until 2021-01-27
 
 ## General

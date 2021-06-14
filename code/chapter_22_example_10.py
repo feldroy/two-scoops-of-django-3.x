@@ -1,8 +1,8 @@
 """
 Using This Code Example
 =========================
-The code examples provided are provided by Daniel and Audrey Feldroy of
-Feldroy to help you reference Two Scoops of Django: Best Practices
+The code examples provided are provided by Daniel and Audrey Roy Greenfeld of
+feldroy.com to help you reference Two Scoops of Django: Best Practices
 for Django 3.x. Code samples follow PEP-0008, with exceptions made for the
 purposes of improving book formatting. Example code is provided "as is", and
 is not intended to be, and should not be considered or labeled as "tutorial
@@ -24,7 +24,7 @@ commercial distributions. Examples:
     product's documentation does require permission.
 Attributions usually include the title, author, publisher and an ISBN. For
 example, "Two Scoops of Django: Best Practices for Django 3.x, by Daniel and
-Audrey Feldroy. Copyright 2020 Feldroy."
+Audrey Roy Greenfeld. Copyright 2020 Feldroy.com."
 
 If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
@@ -36,10 +36,10 @@ given here, please contact us at hi@feldroy.com.
 >>> Inventor.objects.count() # But only 3 inventors
 3
 >>> # Calling someone as both a User and an Inventor
->>> user = User.objects.get(username='umafeldroy')
+>>> user = User.objects.get(username='uma')
 >>> user
 <User: uma>
->>> inventor = Inventor.objects.get(username='umafeldroy')
+>>> inventor = Inventor.objects.get(username='uma')
 >>> inventor
 <Inventor: uma>
 >>> # Calling a method that's only for inventors
