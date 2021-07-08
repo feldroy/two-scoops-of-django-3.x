@@ -42,15 +42,15 @@ class EaterProfile(models.Model):
     # Default user profile
     # If you do this you need to either have a post_save signal or
     #     redirect to a profile_edit view on initial login.
-    user = models.OneToOneField(settings.AUTH_USER_MODEL)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL)
     favorite_ice_cream = models.ForeignKey(Flavor, null=True, blank=True)
 
 class ScooperProfile(models.Model):
 
-    user = models.OneToOneField(settings.AUTH_USER_MODEL)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL)
     scoops_scooped = models.IntegerField(default=0)
 
 class InventorProfile(models.Model):
 
-    user = models.OneToOneField(settings.AUTH_USER_MODEL)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL)
     flavors_invented = models.ManyToManyField(Flavor, null=True, blank=True)

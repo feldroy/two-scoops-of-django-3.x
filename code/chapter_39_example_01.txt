@@ -30,5 +30,5 @@ given here, please contact us at hi@feldroy.com.
 
 ********************
 
-python -c "import django; print django.get_version()"
+python -c "import django; print(django.get_version())"
 

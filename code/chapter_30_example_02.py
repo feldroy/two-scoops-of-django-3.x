@@ -30,21 +30,43 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-# stores/forms.py
-# Call phone and description from the self.fields dict-like object
-from django import forms
+# events/models.py
+from textwrap import dedent
 
-from .models import IceCreamStore
+from django.conf import settings
+from django.core.mail import mail_admins
+from django.db import models
 
-class IceCreamStoreUpdateForm(forms.ModelForm):
+from model_utils.models import TimeStampedModel
 
-    class Meta:
-        model = IceCreamStore
-        fields = ['phone', 'description']
+from .managers import EventManager
 
-    def __init__(self, *args, **kwargs):
-        # Call the original __init__ method before assigning
-        # field overloads
-        super().__init__(*args, **kwargs)
-        self.fields['phone'].required = True
-        self.fields['description'].required = True
+class Event(TimeStampedModel):
+
+    class Status(models.IntegerChoices):
+        STATUS_UNREVIEWED = 0, "Unreviewed"
+        STATUS_REVIEWED = 1, "Reviewed"
+
+
+    title = models.CharField(max_length=100)
+    start = models.DateTimeField()
+    end = models.DateTimeField()
+    status = models.IntegerField(choices=Status.choices,
+                                    default=Status.STATUS_UNREVIEWED)
+    creator = models.ForeignKey(settings.AUTH_USER_MODEL,
+                                on_delete=models.CASCADE)
+
+    objects = EventManager()
+
+    def notify_admins(self):
+        # create the subject and message
+        subject = "{user} submitted a new event!".format(
+                        user=self.creator.get_full_name())
+        message = dedentf"""TITLE: {self.title}
+                  START: {self.start}
+                  END: {self.end}""")
+
+        # Send to the admins!
+        mail_admins(subject=subject,
+            message=message,
+            fail_silently=False)

@@ -35,5 +35,5 @@ from django.db import models
 
 class IceCreamStore(models.Model):
 
-    owner = models.OneToOneField(settings.AUTH_USER_MODEL)
+    owner = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL)
     title = models.CharField(max_length=255)

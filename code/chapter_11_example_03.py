@@ -30,21 +30,26 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-# stores/forms.py
-# Call phone and description from the self.fields dict-like object
-from django import forms
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.generic.views import View
+from django.http import JsonResponse
+from django.shortcuts import get_object_or_404
 
-from .models import IceCreamStore
+import httpx
 
-class IceCreamStoreUpdateForm(forms.ModelForm):
+from core.mixins import AsyncViewMixin
 
-    class Meta:
-        model = IceCreamStore
-        fields = ['phone', 'description']
+class InvokeMicroserviceView(LoginRequiredMixin, AsyncViewMixin, View):
 
-    def __init__(self, *args, **kwargs):
-        # Call the original __init__ method before assigning
-        # field overloads
-        super().__init__(*args, **kwargs)
-        self.fields['phone'].required = True
-        self.fields['description'].required = True
+    def post(self, request, *args, **kwargs):
+        % try:
+        %     async with httpx.AsyncClient() as client:
+        %         response = await client.get(PROMO_SERVICE_URL)
+        %         if response.status_code == httpx.codes.OK:
+        %             context["promo"] = response.json()
+        %         response = await client.get(RECCO_SERVICE_URL)
+        %         if response.status_code == httpx.codes.OK:
+        %             context["recco"] = response.json()
+        % except httpx.RequestError as exc:
+        %     print(f"An error occurred while requesting {exc.request.url!r}.")
+        return JsonResponse({})

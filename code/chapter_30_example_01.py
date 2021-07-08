@@ -30,21 +30,17 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-# stores/forms.py
-# Call phone and description from the self.fields dict-like object
-from django import forms
+# events/managers.py
+from django.db import models
 
-from .models import IceCreamStore
+class EventManager(models.Manager):
 
-class IceCreamStoreUpdateForm(forms.ModelForm):
+    def create_event(self, title, start, end, creator):
+        event = self.model(title=title,
+                            start=start,
+                            end=end,
+                            creator=creator)
+        event.save()
+        event.notify_admins()
+        return event
 
-    class Meta:
-        model = IceCreamStore
-        fields = ['phone', 'description']
-
-    def __init__(self, *args, **kwargs):
-        # Call the original __init__ method before assigning
-        # field overloads
-        super().__init__(*args, **kwargs)
-        self.fields['phone'].required = True
-        self.fields['description'].required = True

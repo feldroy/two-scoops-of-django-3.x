@@ -1,4 +1,3 @@
-"""
 Using This Code Example
 =========================
 The code examples provided are provided by Daniel and Audrey Roy Greenfeld of
@@ -28,23 +27,17 @@ Audrey Roy Greenfeld. Copyright 2020 Feldroy.com."
 
 If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
-"""
 
-# stores/forms.py
-# Call phone and description from the self.fields dict-like object
-from django import forms
+********************
 
-from .models import IceCreamStore
-
-class IceCreamStoreUpdateForm(forms.ModelForm):
-
-    class Meta:
-        model = IceCreamStore
-        fields = ['phone', 'description']
-
-    def __init__(self, *args, **kwargs):
-        # Call the original __init__ method before assigning
-        # field overloads
-        super().__init__(*args, **kwargs)
-        self.fields['phone'].required = True
-        self.fields['description'].required = True
+>>> from django.contrib.auth import get_user_model
+>>> from django.utils import timezone
+>>> from events.models import Event
+>>> user = get_user_model().objects.get(username="audreyr")
+>>> now = timezone.now()
+>>> event = Event.objects.create_event(
+...     title="International Ice Cream Tasting Competition",
+...     start=now,
+...     end=now,
+...     user=user
+...     )

@@ -42,6 +42,7 @@ class PurchaseForm(forms.ModelForm):
 
     class Meta:
         model = Purchase
+        fields = '__all__'
 
     def clean_seller(self):
         seller = self.cleaned_data['seller']

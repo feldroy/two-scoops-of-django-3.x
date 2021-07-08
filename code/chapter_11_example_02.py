@@ -1,3 +1,4 @@
+"""
 Using This Code Example
 =========================
 The code examples provided are provided by Daniel and Audrey Roy Greenfeld of
@@ -27,8 +28,27 @@ Audrey Roy Greenfeld. Copyright 2020 Feldroy.com."
 
 If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
+"""
 
-********************
+from asgiref.sync import sync_to_async
 
-\$ heroku maintenance:on
-Enabling maintenance mode for myapp... done
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.generic.views import AsyncViewMixin, View
+from django.shortcuts import get_object_or_404, render, redirect
+
+from core.mixins import AsyncViewMixin
+from .forms import FlavorForm
+from .models import Flavor
+
+class FlavorUpdateView(LoginRequiredMixin, AsyncViewMixin, View):
+    def get(self, request, *args, **kwargs):
+        flavor = get_object_or_404(Flavor, slug=slug)   
+        return render(request, "flavor_form.html", {"flavor": Flavor})
+
+    def post(self, request, *args, **kwargs):
+        form = FlavorForm(request.POST)
+        if form.is_valid():
+            sync_to_async(form.save())
+        else:
+            return render(request, {'form': form}, "flavor_form.html")
+        return redirect("flavor:detail")

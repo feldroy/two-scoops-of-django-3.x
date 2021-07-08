@@ -30,7 +30,7 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
-from django.db import modelss
+from django.db import models
 
 class IceCreamBar(models.Model):
     name = models.CharField(max_length=100)

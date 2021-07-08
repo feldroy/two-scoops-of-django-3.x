@@ -2,6 +2,47 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
+# Updates until 2021-07-08
+
+## General
+
+- Grammar corrections
+- All form classes have `fields` defined
+
+## Javascript
+
+- Added Next and Nuxt
+- Linked to Django support for HTMX and Hotwire
+- General cleanup
+
+## GraphQL
+
+- Make Graphene a first class citizen
+- Discuss Ariadne's shortcomings
+
+## Signals
+
+- Updated signals to Django 3.2
+
+## PAAS
+
+- Added render.com and divio cloud
+- Remove mention of Heroku
+
+## Deployment
+
+- Added ASGI
+- Modernized WSGI section
+
+## Queues
+
+- Removed django-background-tasks as it is now unmaintained
+- Edit, cleanup, and unleash remaining content after subsection 1.3.5
+
+## Continuous Integration
+
+- Updated CI to Django 3.2
+
 # Updates until 2021-06-14
 
 ## General
@@ -23,10 +64,9 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
 ## Where and how to ask for help
 
-- Added section on the official forums 
+- Added section on the official forums
 - Added Libera Chat IRC
 - Linkified a few items to make things easier on readers
-
 
 ---
 
@@ -42,7 +82,7 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
 ## Graphql
 
-- Removed trygql.com 
+- Removed trygql.com
 
 ## Security
 
@@ -68,7 +108,7 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
 - Added Authorized Vendors and Distributors informations
 - Various spelling and grammar corrections
-- Removed last python 2.7-style usages of `super()` 
+- Removed last python 2.7-style usages of `super()`
 
 ## Database Queries
 
@@ -81,9 +121,6 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 ## User models
 
 - Corrected wrong parent class
-
-
-
 
 ---
 
@@ -103,7 +140,7 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
 ## Templates
 
-- Removed GitHub's 404 page from the list of being self-contained HTML, CSS, and JS 
+- Removed GitHub's 404 page from the list of being self-contained HTML, CSS, and JS
 
 ## Third-party packages
 
@@ -123,7 +160,7 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
 ## General Changes
 
-- Moved first reference to indexes from chapter 6 to chapter 7 
+- Moved first reference to indexes from chapter 6 to chapter 7
 - The inevitable grammar corrections
 
 ## Settings and Requirements
@@ -136,7 +173,7 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
 ## Best Practices for CBVs
 
-- Mixins should not inherit from `object`, that is a holdover from Python 2.7 
+- Mixins should not inherit from `object`, that is a holdover from Python 2.7
 
 ## Finding and Reducing bottlenecks
 
@@ -154,11 +191,11 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
 - All pages updated for Django 3.x and Python 3.8
 
-----
+---
 
 # Updates until 2020-07-07
 
-This update adds 15 new pages to Two Scoops of Django, bringing us up to 461! 
+This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 
 ## General Changes
 
@@ -203,7 +240,7 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 
 ## Chapter - Database Model Best Practices
 
-- Removed link to blog post that used to describe how to use `DateTimeField` with logical deletes 
+- Removed link to blog post that used to describe how to use `DateTimeField` with logical deletes
 
 ## Chapter - Building APIs with Django Rest Framework
 
@@ -219,17 +256,15 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 - Included alpine.js and turbolinks
 - Added section on JSON encoding for data rendered in the template but consumed by JavaScript
 
-
 ## Chapter - Security
- 
-- Corrected typo so PHI is now the acronym for `Protected Health Information`
 
+- Corrected typo so PHI is now the acronym for `Protected Health Information`
 
 ## Acknowledgements
 
 - Added Bio for Haris Ibrahim
 
-----
+---
 
 # Updates until 2020-06-05
 
@@ -238,7 +273,7 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 - Made pipenv active again now that they had a formal release
 - Added first half of Appendix A: Chapters mentioned in this book
 
-----
+---
 
 # Updates until 2020-05-29
 
@@ -254,7 +289,6 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 ## Chapter - FBVs
 
 - Corrected return type for `check_sprinkles` function
-
 
 ## Chapter - Django REST Framework
 
@@ -274,7 +308,7 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 - Ponycheckup is no more. Many thanks to Sasha Romijn for providing such an invaluable
 - Added PyCharm Django Security
 
-----
+---
 
 # Updates until 2020-05-19
 
@@ -308,17 +342,15 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 - Added Zappa as an option
 - Took away statement that Elastic Beanstalk was on mod_wsgi and hence no channels
 
-
 ## Chapter - CI
 
- - Added MacOS to Azure Pipelines in feature table
+- Added MacOS to Azure Pipelines in feature table
 
 ## Chapter - Debugging
 
 - Updated IDE preferences
 
-
-----
+---
 
 # Updates until 2020-05-13
 
@@ -328,7 +360,7 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 - Updated Django version to 3.x
 - Updated Python version to Python 3.8/3.9
 - Removed Appendix giving advice on upgrading from Python 2 to 3
-- Remove mention of Mercurial. 
+- Remove mention of Mercurial.
 - Changed `README.rst` to `README.md`
 - `OS X` is now `Mac`
 - References to `django-admin.py` replace with `django-admin`
@@ -338,14 +370,13 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 - "Don't Do This!!" code examples have new style
 - Use "README file" instead of README.md or README.rst
 - Added footer to instruct users where to submit issues
-- Added warnings at the front of chapters which won't be published  
+- Added warnings at the front of chapters which won't be published
 
 ## Book crafting process
 
 - LaTeX datestamping now automated. Why didn't we do this years ago?
 - Added placeins LaTex package to the `requirements-latex.yml` file.
 - Updated the book build instructions.
-
 
 ## Note from the authors
 
@@ -365,7 +396,6 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 - Added wemake-python-styleguide
 - Added isort for ordering imports
 - Change JS coding style standard URL to github.com/standard/standard
-
 
 ## Chapter - Environment Setup
 
@@ -396,7 +426,7 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 - Mention `BooleanField` has default of `blank=True`
 - Added Haki Benita's excellent article on bullet proofing Django models
 - `null=True` for `ManyToManyField` is now recommended against as it raises a check warning
-- Custom default Model Managers are no longer forbidden, just an advanced technique to be wary of 
+- Custom default Model Managers are no longer forbidden, just an advanced technique to be wary of
 - Removed mention of South as a competing migrations system
 
 ## Chapter - More Forms
@@ -404,8 +434,6 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 - Added links to more useful references, removed some outdated ones
 - Switch from JWT library to dj-rest-auth for authentication
 - Remove link to csrf docs
-
-
 
 ## Chapter - Function- and Class-Based Views
 
@@ -461,10 +489,9 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 - Added Vanilla JS as progressive option
 - Moved JQuery to legacy. While, JQuery isn't legacy yet it is on the way to become so
 - Rewrote strengthening JavaScript skills
-- Removed section on `CSRF_COOKIE_HTTPONLY` as it doesn't make Django any more secure, just satisfies some security auditors. 
+- Removed section on `CSRF_COOKIE_HTTPONLY` as it doesn't make Django any more secure, just satisfies some security auditors.
 - No longer recommend JWT as an authentication method
 - No longer excuse turning off CSRF to support JWT
-
 
 ## Chapter - FrankenDjango
 
@@ -488,7 +515,7 @@ This update adds 15 new pages to Two Scoops of Django, bringing us up to 461!
 - Removed yslow
 - Change link to Lanyrd search for conference talks to YouTube
 - Removed link to David Cramer's now defunct blog
-- Reference Andrew Brook's excellent book, [The Temple of Django Database Performance](https://spellbookpress.com/books/temple-of-django-database-performance/) 
+- Reference Andrew Brook's excellent book, [The Temple of Django Database Performance](https://spellbookpress.com/books/temple-of-django-database-performance/)
 
 ## Chapter - Signals
 
@@ -537,9 +564,8 @@ _Many thanks to our incredibly diligent security reviewers!_
 - Discussion of `SECRET_KEY` now states what can actually occur
 - Added section on not storing unnecessary data which includes credit card, PII, and PHI data
 - Added missing 'N' to the word 'ever'
-- Added section on upgrading password hasher to Argon2 
+- Added section on upgrading password hasher to Argon2
 - Added section on using SRI when loading static assets from external CDNs
-
 
 ## Chapter - Utilities
 
@@ -560,7 +586,6 @@ _Many thanks to our incredibly diligent security reviewers!_
 
 - Removed defunct django-gargoyle package and added django-flags as the plucky newcomer
 
-
 ## Appendix - Packages
 
 - Separated Dependency Management out of Core into own category
@@ -577,7 +602,6 @@ _Many thanks to our incredibly diligent security reviewers!_
 - Added Simple Better Than Complex, apologies to Vitor we didn't include it at launch
 - Added classy Django forms
 - Removed links to our own pages of additional resources
-
 
 ## Appendix - Handling Security Failures
 

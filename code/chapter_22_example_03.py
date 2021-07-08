@@ -37,5 +37,5 @@ from django.db import models
 class IceCreamStore(models.Model):
 
     # This following line tends to create import loops.
-    owner = models.OneToOneField(get_user_model())
+    owner = models.OneToOneField(get_user_model(), on_delete=models.SET_NULL)
     title = models.CharField(max_length=255)

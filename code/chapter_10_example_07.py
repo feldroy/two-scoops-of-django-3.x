@@ -35,7 +35,7 @@ from django.db import models
 from django.urls import reverse
 
 class Flavor(models.Model):
-    class Scoops(models.IntegerChoices)
+    class Scoops(models.IntegerChoices):
         SCOOPS_0 = 0
         SCOOPS_1 = 1
 

@@ -34,6 +34,7 @@ given here, please contact us at hi@feldroy.com.
 scoops/
 ├── __init__.py
 ├── admin.py
+├── apps.py
 ├── forms.py
 ├── management/
 ├── migrations/

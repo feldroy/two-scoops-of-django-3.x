@@ -44,3 +44,4 @@ class FlavorForm(forms.ModelForm):
 
     class Meta:
         model = Flavor
+        fields = ['title', 'slug']

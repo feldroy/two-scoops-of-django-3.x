@@ -30,19 +30,7 @@ If you feel your use of code examples falls outside fair use of the permission
 given here, please contact us at hi@feldroy.com.
 """
 
+# core/mixins.py
 class AsyncViewMixin:
     async def __call__(self):
-        return super().__call__(self)
-
-class SimpleBookUpdateView(LoginRequiredMixin, AsyncViewMixin, View):
-    def get(self, request, *args, **kwargs):
-        flavor = get_object_or_404(Flavor, slug=slug)   
-        return render(request, "flavor_form.html", {"flavor": Flavor})
-
-    def post(self, request, *args, **kwargs):
-        form = FlavorForm(request.POST)
-        if form.is_valid():
-            sync_to_async(form.save())
-        else:
-            return render({'form': form}, "flavor_form.html")
-        return redirect("flavor:detail")
+        return super().__call__(self)  

@@ -38,6 +38,7 @@ class TasterForm(forms.ModelForm):
 
     class Meta:
         model = Taster
+        fields = ['name', 'dreams', 'aspirations']
 
     def __init__(self, *args, **kwargs):
         # set the user as an attribute of the form

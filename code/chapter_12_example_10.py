@@ -43,3 +43,4 @@ class IceCreamStoreUpdateForm(forms.ModelForm):
 
     class Meta:
         model = IceCreamStore
+        fields = '__all__'
