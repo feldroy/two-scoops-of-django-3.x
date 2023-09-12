@@ -12,7 +12,7 @@ This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
 ## Asynchronous Views
 
-- Admit that the Django 3 story for Asynchronous views was still in its infancy.
+- Finally admit that the Django 3 story for Asynchronous views was still in its infancy.
 
 ## GraphQL
 
