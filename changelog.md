@@ -2,6 +2,28 @@
 
 This lists many, but not all the changes between TSD 1.11 and TSD 3.x.
 
+# Updates 2023-08-16
+
+## General
+
+- Grammar corrections
+- Cleanup frontmatter
+- Zappa now pointing at github.com/zappa/zappa
+
+## Asynchronous Views
+
+- Admit that the Django 3 story for Asynchronous views was still in its infancy.
+
+## GraphQL
+
+- Recommend Strawberry as best-of-breed Python GraphQL libraries
+- Mention https://github.com/mirumee/ariadne-codegen for client generation
+
+## Acknowledgements
+
+- Give special thanks to Fábio C. Barrionuevo 
+- Add link to Laura Gelsomino's LinkedIn profile
+
 # Updates until 2021-07-08
 
 ## General
