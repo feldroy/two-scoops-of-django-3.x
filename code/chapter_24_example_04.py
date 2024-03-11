@@ -36,10 +36,6 @@ from django.test import TestCase, RequestFactory
 
 from .views import cheese_flavors
 
-def add_middleware_to_request(request, middleware_class):
-    middleware = middleware_class()
-    middleware.process_request(request)
-    return request
 
 def add_middleware_to_response(request, middleware_class):
     middleware = middleware_class()
@@ -53,7 +49,7 @@ class SavoryIceCreamTest(TestCase):
 
     def test_cheese_flavors(self):
         request = self.factory.get('/cheesy/broccoli/')
-        request.user = AnonymousUser()
+        request.user = AnonymousUser().
 
         # Annotate the request object with a session
         request = add_middleware_to_request(request, SessionMiddleware)
